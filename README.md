@@ -5,7 +5,32 @@ This project provides an **end-to-end analytical pipeline** for healthcare data,
 
 By combining **Python** for data engineering, **MySQL** for structured querying, and **Power BI** for executive-level storytelling, this project demonstrates a comprehensive approach to modern data analytics.
 
----
+## 📂 Project Structure
+Organizing the repository ensures scalability and ease of navigation:
+
+```
+healthcare_analysis/
+│
+├── data/
+│   └── healthcare_dataset.csv       # Raw clinical & billing data
+│
+├── python/
+│   ├── data_preprocessing.ipynb     # Cleaning & Feature Engineering
+│   └── exploratory_analysis.ipynb   # Visualizing trends (Seaborn/Matplotlib)
+│
+├── sql/
+│   ├── schema_setup.sql             # Table definitions & constraints
+│   └── analytical_queries.sql       # Business logic & aggregations
+│
+├── powerbi/
+│   └── healthcare_dashboard.pbix    # Final interactive report
+│
+├── images/
+│   ├── dashboard_preview.png        # Screenshot for README
+│   └── workflow_chart.png           # Process visualization
+│
+└── README.md                        # Project documentation
+```
 
 ## 🔄 Project Workflow
 
@@ -54,6 +79,18 @@ Developed a multi-page interactive report featuring:
 * **Live Integration:** Connect the Power BI report to a live cloud database (AWS/Azure) for real-time monitoring.
 
 ---
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the Repository
+To get a local copy up and running, follow these simple steps:
+
+```bash
+git clone https://github.com/YOUR_USERNAME/healthcare_analysis.git
+cd healthcare_analysis
+```
 
 ## 👤 Author
 **Simardeep Kaur**
