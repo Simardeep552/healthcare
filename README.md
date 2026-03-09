@@ -1,93 +1,62 @@
 # 🏥 Healthcare Data Analysis Project
 
 ## 📌 Project Overview
-This project performs an **end-to-end analysis of healthcare data** to uncover insights related to patient demographics, hospital admissions, treatment costs, and length of hospital stay.
+This project provides an **end-to-end analytical pipeline** for healthcare data, transforming raw hospital records into actionable insights regarding patient demographics, treatment costs, and operational efficiency.
 
-The project combines **Python** for data engineering, **MySQL** for structured querying, and **Power BI** for interactive dashboards to deliver meaningful insights that support healthcare decision-making.
-
----
-
-## 🎯 Project Objectives
-* **Demographic Profiling:** Analyze patient distribution by age groups and gender.
-* **Operational Efficiency:** Understand patterns in hospital admissions and **Length of Stay (LOS)**.
-* **Financial Analytics:** Identify trends in medical conditions and treatment costs.
-* **Performance Evaluation:** Benchmark hospitals and doctors based on billing revenue.
-* **Interactive Visualization:** Create dashboards to make healthcare metrics easily accessible.
+By combining **Python** for data engineering, **MySQL** for structured querying, and **Power BI** for executive-level storytelling, this project demonstrates a comprehensive approach to modern data analytics.
 
 ---
 
-## 🛠️ Tools & Technologies
+## 🔄 Project Workflow
 
-| Tool | Purpose |
-| :--- | :--- |
-| **Python** | Data cleaning and Exploratory Data Analysis (EDA) |
-| **Pandas / NumPy** | Data manipulation and numerical operations |
-| **Matplotlib / Seaborn** | Statistical data visualization |
-| **MySQL** | Structured data querying and analysis |
-| **Power BI** | Interactive dashboard creation |
+### 1. Data Cleaning & Engineering (Python)
+Using **Pandas**, the raw dataset was transformed and standardized:
+* **Integrity:** Removed duplicates and handled invalid or outlier billing records.
+* **Normalization:** Standardized column names to snake_case for seamless **SQL** compatibility.
+* **Feature Engineering:** Derived new metrics to deepen analysis:
+    * `Length of Stay`: (Discharge Date - Admission Date).
+    * `Stay Category`: Grouping duration into Short, Medium, and Long-term.
+    * `Age Category`: Segmenting patients into Child, Adult, and Senior.
+
+
+
+### 2. Exploratory Data Analysis (EDA)
+Performed statistical analysis using **Matplotlib** and **Seaborn** to visualize:
+* **Demographics:** Patient distribution by age groups and gender.
+* **Correlations:** Relationship between admission types and stay duration.
+* **Financials:** Billing patterns across various medical conditions.
+
+### 3. SQL Analysis
+The cleaned data was migrated to **MySQL** to extract high-level business logic, including:
+* Ranking top-performing hospitals by total revenue.
+* Analyzing average treatment costs per insurance provider.
+* Aggregating patient volume by medical specialty.
+
+### 4. Interactive Dashboard (Power BI)
+Developed a multi-page interactive report featuring:
+* **Dynamic Slicers:** Real-time filtering by Hospital, Admission Type, and Gender.
+* **KPI Cards:** Instant metrics for Total Revenue, Patient Count, and Avg Stay.
+* **Performance Charts:** Visual benchmarking for doctor and hospital efficiency.
 
 ---
 
-## 📂 Project Structure
-```text
-healthcare_project/
-├── data/
-│   └── healthcare_dataset.xlsx      # Raw healthcare data
-├── python/
-│   └── healthcare_analysis.ipynb    # Data cleaning & EDA
-├── sql/
-│   └── healthcare_analysis.sql      # Analytical SQL queries
-├── powerbi/
-│   └── healthcare_dashboard.pbix    # Interactive BI report
-└── README.md                        # Project documentation
+## 📈 Key Insights
+* **Demographics:** Adults and seniors represent the largest patient segment, indicating a high demand for chronic care resources.
+* **Operational Trends:** Extended hospital stays are frequent, suggesting a need for improved long-term clinical management or discharge planning.
+* **Financial Drivers:** Admission types significantly influence total billing; emergency cases correlate with 15-20% higher costs.
+* **Provider Performance:** A small percentage of "High-Volume" hospitals and doctors contribute to the majority of the total revenue.
 
-🔄 ## Project Workflow
-1. Data Cleaning & Engineering (Python)
-Using Pandas, the raw dataset was transformed for analysis:
+---
 
-Removed duplicates and handled invalid billing records.
+## 🚀 Future Scope
+* **Predictive Analytics:** Implement Machine Learning models (e.g., Random Forest) to forecast patient stay duration at admission.
+* **Resource Management:** Build a forecasting model for hospital bed availability to optimize intake.
+* **Live Integration:** Connect the Power BI report to a live cloud database (AWS/Azure) for real-time monitoring.
 
-Standardized column names for SQL compatibility.
+---
 
-Feature Engineering: Created new metrics including Length of Stay, Stay Category, and Age Category (Child, Adult, Senior).
+## 👤 Author
+**Simardeep Kaur**
+*Aspiring Data Analyst | Python, SQL, and Power BI*
 
-2. Exploratory Data Analysis (EDA)
-Performed statistical analysis to visualize:
-
-Patient distribution by age and gender.
-
-Correlation between admission type and hospital stay duration.
-
-Billing patterns across different medical conditions.
-
-3. SQL Analysis
-The cleaned data was queried in MySQL to extract high-level business logic, such as ranking top hospitals by revenue and analyzing average costs per insurance provider.
-
-4. Interactive Dashboard (Power BI)
-Developed a multi-page dashboard featuring:
-
-Dynamic Slicers for filtering by Hospital and Admission Type.
-
-KPI Cards for Total Revenue, Patient Count, and Avg Length of Stay.
-
-Performance Charts to compare doctor and hospital efficiency.
-
-📈 Key Insights 📈 Key Insights 
-Demographics: Adults and seniors represent the largest patient segment, suggesting a need for focused chronic care resources.
-
-Operational Trends: Extended hospital stays are frequent, indicating high demand for long-term clinical management.
-
-Financial Drivers: Admission types significantly influence total billing, with emergency cases generally resulting in higher costs.
-
-Provider Performance: A small percentage of hospitals and doctors contribute to a significant portion of the total revenue.
-
-🚀 Future Scope 🚀 Future Scope 
-Predictive Analytics: Implement ML models to forecast patient stay duration.
-
-Resource Management: Build a forecasting model for hospital bed availability.
-
-Live Integration: Connect the report to a live cloud database for real-time monitoring.
-
-👤 Author 👤 Author 
-Simardeep Kaur Aspiring Data Analyst | Python, SQL, and Power BI
-Simardeep Kaur Aspiring Data Analyst | Python, SQL, and Power BI
+---
