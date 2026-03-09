@@ -5,6 +5,10 @@ This project provides an **end-to-end analytical pipeline** for healthcare data,
 
 By combining **Python** for data engineering, **MySQL** for structured querying, and **Power BI** for executive-level storytelling, this project demonstrates a comprehensive approach to modern data analytics.
 
+<img width="1327" height="740" alt="Dashboard3" src="https://github.com/user-attachments/assets/ec8b6078-eade-4211-8f27-485233ac4db4" />
+<img width="1324" height="742" alt="Dashboard1" src="https://github.com/user-attachments/assets/6244c81b-f985-477a-8854-56d7b0305d76" />
+<img width="1323" height="743" alt="Dashboard2" src="https://github.com/user-attachments/assets/892824da-5642-4b8f-92ec-3e5d7b9181c2" />
+
 ## 📂 Project Structure
 Organizing the repository ensures scalability and ease of navigation:
 
@@ -85,6 +89,8 @@ Developed a multi-page interactive report featuring:
 ## 🚀 Getting Started
 
 ### 1. Clone the Repository
+
+
 To get a local copy up and running, follow these simple steps:
 
 ```bash
