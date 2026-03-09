@@ -40,3 +40,54 @@ healthcare_project/
 ├── powerbi/
 │   └── healthcare_dashboard.pbix    # Interactive BI report
 └── README.md                        # Project documentation
+
+🔄 ## Project Workflow
+1. Data Cleaning & Engineering (Python)
+Using Pandas, the raw dataset was transformed for analysis:
+
+Removed duplicates and handled invalid billing records.
+
+Standardized column names for SQL compatibility.
+
+Feature Engineering: Created new metrics including Length of Stay, Stay Category, and Age Category (Child, Adult, Senior).
+
+2. Exploratory Data Analysis (EDA)
+Performed statistical analysis to visualize:
+
+Patient distribution by age and gender.
+
+Correlation between admission type and hospital stay duration.
+
+Billing patterns across different medical conditions.
+
+3. SQL Analysis
+The cleaned data was queried in MySQL to extract high-level business logic, such as ranking top hospitals by revenue and analyzing average costs per insurance provider.
+
+4. Interactive Dashboard (Power BI)
+Developed a multi-page dashboard featuring:
+
+Dynamic Slicers for filtering by Hospital and Admission Type.
+
+KPI Cards for Total Revenue, Patient Count, and Avg Length of Stay.
+
+Performance Charts to compare doctor and hospital efficiency.
+
+📈 Key Insights 📈 Key Insights 
+Demographics: Adults and seniors represent the largest patient segment, suggesting a need for focused chronic care resources.
+
+Operational Trends: Extended hospital stays are frequent, indicating high demand for long-term clinical management.
+
+Financial Drivers: Admission types significantly influence total billing, with emergency cases generally resulting in higher costs.
+
+Provider Performance: A small percentage of hospitals and doctors contribute to a significant portion of the total revenue.
+
+🚀 Future Scope 🚀 Future Scope 
+Predictive Analytics: Implement ML models to forecast patient stay duration.
+
+Resource Management: Build a forecasting model for hospital bed availability.
+
+Live Integration: Connect the report to a live cloud database for real-time monitoring.
+
+👤 Author 👤 Author 
+Simardeep Kaur Aspiring Data Analyst | Python, SQL, and Power BI
+Simardeep Kaur Aspiring Data Analyst | Python, SQL, and Power BI
